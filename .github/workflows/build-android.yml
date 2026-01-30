@@ -21,4 +21,4 @@ jobs:
           distribution: 'zulu'
           java-version: 21
       - name: Android debug build
-        run: ./gradlew assembleDebug --stacktrace
+        run: ./gradlew :app:android:assembleDebug --stacktrace
