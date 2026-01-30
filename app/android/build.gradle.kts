@@ -38,7 +38,6 @@ android {
 }
 
 dependencies {
-
     implementation(project(":app:shared"))
     implementation(platform(libs.androidx.compose.bom))
     implementation(libs.androidx.compose.foundation)
