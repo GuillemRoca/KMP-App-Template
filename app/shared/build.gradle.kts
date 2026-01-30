@@ -12,7 +12,7 @@ plugins {
 kotlin {
     androidLibrary {
         namespace = "com.jetbrains.kmpapp"
-        compileSdk = 35
+        compileSdk = 36
         minSdk = 24
         compilerOptions.jvmTarget = JvmTarget.JVM_11
         androidResources.enable = true
