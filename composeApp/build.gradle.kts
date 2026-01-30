@@ -6,9 +6,17 @@ plugins {
     alias(libs.plugins.composeMultiplatform)
     alias(libs.plugins.composeCompiler)
     alias(libs.plugins.kotlinxSerialization)
+    alias(libs.plugins.androidMultiplatformLibrary)
 }
 
 kotlin {
+    androidLibrary {
+        namespace = "com.jetbrains.kmpapp"
+        compileSdk = 35
+        minSdk = 24
+        compilerOptions.jvmTarget = JvmTarget.JVM_11
+        androidResources.enable = true
+    }
     listOf(
         iosX64(),
         iosArm64(),

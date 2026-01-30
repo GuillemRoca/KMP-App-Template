@@ -1,4 +1,4 @@
-package com.jetbrains.kmpapp
+package com.jetbrains.kmpapp.android
 
 import android.app.Application
 import com.jetbrains.kmpapp.di.initKoin
